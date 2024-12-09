@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2020-10-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "existingApimName": {
+        "value": "apimopenai2"
+      },
+      "existingOpenAIResourceGroup": {
+        "value": "lab-backend-pool-load-balancing"
+      },
+      "existingCognitiveServices": {
+      "value": [
+        {
+          "name": "openai1-i4pfeifvzr4qo",
+          "id": "/subscriptions/6ec87e86-6979-4efc-8ae2-ee572946de04/resourceGroups/lab-backend-pool-load-balancing/providers/Microsoft.CognitiveServices/accounts/openai1-i4pfeifvzr4qo",
+          "location": "uksouth",
+          "priority": 1,
+          "weight": 80
+        },
+        {
+          "name": "openai2-i4pfeifvzr4qo",
+          "id": "/subscriptions/6ec87e86-6979-4efc-8ae2-ee572946de04/resourceGroups/lab-backend-pool-load-balancing/providers/Microsoft.CognitiveServices/accounts/openai2-i4pfeifvzr4qo",
+          "location": "swedencentral",
+          "priority": 1,
+          "weight": 10
+        },
+        {
+          "name": "openai3-i4pfeifvzr4qo",
+          "id": "/subscriptions/6ec87e86-6979-4efc-8ae2-ee572946de04/resourceGroups/lab-backend-pool-load-balancing/providers/Microsoft.CognitiveServices/accounts/openai3-i4pfeifvzr4qo",
+          "location": "francecentral",
+          "priority": 1,
+          "weight": 10
+        }
+      ]
+    }
+    }
+  }

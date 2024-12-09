@@ -1,0 +1,1 @@
+az deployment group create --name deploy --resource-group {rg-name} --template-file "main.bicep" --parameters "params.json"
